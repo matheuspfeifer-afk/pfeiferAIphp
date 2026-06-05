@@ -1,59 +1,136 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🤖 PfeiferAIphp
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema desenvolvido em Laravel para gerenciamento e distribuição de uma aplicação de um assistente de Inteligência Artificial.
 
-## About Laravel
+## 📋 Sobre o Projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O **PfeiferAIphp** é uma plataforma web desenvolvida em Laravel que permite o gerenciamento de usuários e administradores, além da distribuição controlada de uma Inteligência Artificial operacional desenvolvida em Python.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O objetivo do sistema é disponibilizar uma aplicação de IA para usuários cadastrados, garantindo controle de acesso, autenticação segura e gerenciamento dos arquivos disponibilizados para download.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🚀 Funcionalidades
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 👤 Usuários
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Cadastro de novos usuários
+- Login autenticado
+- Recuperação de senha
+- Área restrita para usuários autenticados
+- Download da IA apenas para usuários logados
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 👨‍💼 Administrador
 
-## Agentic Development
+- Login administrativo
+- Gerenciamento completo de usuários (CRUD)
+- Upload de arquivos ZIP contendo versões da IA
+- Controle dos arquivos disponibilizados para download
+- Gerenciamento da plataforma através do painel administrativo
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 🤖 Inteligência Artificial
 
-```bash
-composer require laravel/boost --dev
+- Desenvolvida em Python
+- Disponibilizada através de arquivo compactado (.zip)
+- Executada localmente no computador do usuário
+- Realiza tarefas automatizadas e operacionais
+- Download permitido apenas para usuários autenticados
 
-php artisan boost:install
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Backend
+
+- PHP 8+
+- Laravel
+- MySQL
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Ferramentas
+
+- PhpStorm
+- Composer
+- Git
+- GitHub
+
+### Inteligência Artificial
+
+- Python
+
+---
+
+## 🔐 Controle de Acesso
+
+O sistema possui dois níveis de acesso:
+
+### Usuário
+
+- Realizar cadastro
+- Efetuar login
+- Recuperar senha
+- Baixar a IA disponível
+
+### Administrador
+
+- Gerenciar usuários
+- Realizar upload de novas versões da IA
+- Controlar os arquivos disponíveis para download
+
+---
+
+## 📂 Estrutura Geral do Sistema
+
+```text
+PfeiferAIphp/
+│
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+└── vendor/
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 📌 Fluxo de Utilização
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. O usuário realiza seu cadastro.
+2. Efetua login na plataforma.
+3. Acessa a área restrita.
+4. Faz o download da IA disponibilizada pelo administrador.
+5. Extrai o arquivo ZIP.
+6. Executa a aplicação Python localmente em seu computador.
 
-## Code of Conduct
+Enquanto isso:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. O administrador acessa o painel administrativo.
+2. Faz upload de novas versões da IA.
+3. Gerencia usuários cadastrados.
+4. Controla os arquivos disponíveis para download.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🎯 Objetivo
 
-## License
+Disponibilizar uma plataforma segura para distribuição e gerenciamento de uma Inteligência Artificial operacional, garantindo que apenas usuários autenticados tenham acesso aos arquivos e recursos disponibilizados.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# pfeiferAIphp
+---
+
+## 👨‍💻 Desenvolvedor
+
+**Matheus Pfeifer**
+
+Projeto desenvolvido utilizando Laravel, PHP e Python para integração entre plataforma web e Inteligência Artificial operacional.
+
+---
